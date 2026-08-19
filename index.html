@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Perfect Printing & Cyber Cafe</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7f6;
+    color:#222;
+}
+
+header{
+    background:#0b7a3e;
+    color:white;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:15px;
+}
+
+.hero{
+    min-height:520px;
+    background:linear-gradient(rgba(0,90,45,.82),rgba(0,90,45,.82)),
+    url("https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:30px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:19px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffffff;
+    color:#08783c;
+    padding:14px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 8%;
+}
+
+.heading{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.heading h2{
+    color:#08783c;
+    font-size:32px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#08783c;
+    margin-bottom:10px;
+}
+
+.price-box{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#08783c;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:14px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f2fff7;
+}
+
+.offer{
+    background:#08783c;
+    color:white;
+    border-radius:18px;
+    text-align:center;
+    padding:35px;
+}
+
+.offer h2{
+    margin-bottom:15px;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.contact-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.contact-box h3{
+    color:#08783c;
+    margin-bottom:12px;
+}
+
+footer{
+    background:#063d20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+
+@media(max-width:700px){
+
+header{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav a{
+    margin:0 8px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Perfect Printing & Cyber Cafe</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#rates">Rate List</a>
+<a href="#offer">Offer</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Perfect Printing & Cyber Cafe</h1>
+
+<p>
+Printing • Photocopy • Online Services • Stationery
+</p>
+
+<a href="#rates" class="btn">View Rate List</a>
+
+</div>
+
+</section>
+
+
+<section id="services">
+
+<div class="heading">
+
+<h2>Our Services</h2>
+
+<p>Fast & Professional Digital Services</p>
+
+</div>
+
+<div class="services">
+
+<div class="card">
+<h3>Photocopy</h3>
+<p>Single & Double Side Copy</p>
+</div>
+
+<div class="card">
+<h3>Printout</h3>
+<p>Black & White Printing</p>
+</div>
+
+<div class="card">
+<h3>PDF Printing</h3>
+<p>Bulk Printing Available</p>
+</div>
+
+<div class="card">
+<h3>Lamination</h3>
+<p>Document & Aadhaar Lamination</p>
+</div>
+
+<div class="card">
+<h3>Scanning</h3>
+<p>High Quality Scan Per Page</p>
+</div>
+
+<div class="card">
+<h3>Form Filling</h3>
+<p>Online Government & Other Forms</p>
+</div>
+
+<div class="card">
+<h3>Passport Photo</h3>
+<p>Professional Photo Service</p>
+</div>
+
+<div class="card">
+<h3>Stationery</h3>
+<p>School • College • Office Items</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="rates">
+
+<div class="heading">
+
+<h2>Rate List</h2>
+
+<p>Affordable & Transparent Pricing</p>
+
+</div>
+
+<div class="price-box">
+
+<table>
+
+<tr>
+<th>Service</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>Photocopy Single</td>
+<td>₹1</td>
+</tr>
+
+<tr>
+<td>Photocopy Double</td>
+<td>₹2</td>
+</tr>
+
+<tr>
+<td>Printout Single</td>
+<td>₹3</td>
+</tr>
+
+<tr>
+<td>Printout Double</td>
+<td>₹5</td>
+</tr>
+
+<tr>
+<td>PDF Printing (10+ Pages) Single</td>
+<td>₹2 / Page</td>
+</tr>
+
+<tr>
+<td>PDF Printing (10+ Pages) Double</td>
+<td>₹4 / Page</td>
+</tr>
+
+<tr>
+<td>Lamination</td>
+<td>₹10</td>
+</tr>
+
+<tr>
+<td>Scanning</td>
+<td>₹5 / Page</td>
+</tr>
+
+<tr>
+<td>Aadhaar Card Lamination</td>
+<td>₹30</td>
+</tr>
+
+<tr>
+<td>Online Form Filling</td>
+<td>₹100</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+
+<section id="offer">
+
+<div class="offer">
+
+<h2>Special Customer Offer 🎉</h2>
+
+<p style="font-size:20px;margin-bottom:12px;">
+Give Us Google Feedback & Get 10% Discount
+</p>
+
+<p>
+Stationery Items Par ₹100 Ki Purchase Par 10% Discount
+</p>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<div class="heading">
+
+<h2>Contact Us</h2>
+
+<p>Visit Our Shop For Fast Service</p>
+
+</div>
+
+<div class="contact">
+
+<div class="contact-box">
+
+<h3>🏪 Shop</h3>
+
+<p>Perfect Printing & Cyber Cafe</p>
+
+<p>Printing, Photocopy, Online Services & Stationery</p>
+
+</div>
+
+<div class="contact-box">
+
+<h3>📞 Mobile</h3>
+
+<p>Contact Number</p>
+
+<p><b>Add Your Number Here</b></p>
+
+</div>
+
+<div class="contact-box">
+
+<h3>📍 Address</h3>
+
+<p>Rajajipuram / Devpur Para</p>
+
+<p>Lucknow, Uttar Pradesh</p>
+
+</div>
+
+<div class="contact-box">
+
+<h3>🕒 Timing</h3>
+
+<p>Open Daily</p>
+
+<p>9:30 AM – 9:30 PM</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Perfect Printing & Cyber Cafe | All Rights Reserved</p>
+
+</footer>
+
+
+<a class="whatsapp" href="https://wa.me/" target="_blank">☎</a>
+
+</body>
+</html>
