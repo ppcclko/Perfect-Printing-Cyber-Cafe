@@ -571,7 +571,7 @@ Google Feedback देने वाले Customers को
 <div class="contact-box">
 <h3>📞 Contact</h3>
 <p>For Orders & Online Services</p>
-<p><strong>Contact Number Add Here</strong></p>
+<p><strong>9151687189</strong></p>
 </div>
 
 </div>
